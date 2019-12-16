@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <p id="Blue"></p>
+    <p id="Red"></p>
+    <p id="Green"></p>
+    <p id="Color"></p>
+    <button type="button"onclick="button()">Click Me</button>
+    <script type="text/javascript">
+      function color(num) {
+        if (num<0 || num>30) {
+          return "No color";
+        } else if (num<10) {
+          return "blue";
+        } else if (num<20) {
+          return "red";
+        }else {
+          return "green";
+        }
+      }
+      function button() {
+        document.getElementById("Blue").innerHTML="Number 3  is :"+color(3);
+        document.getElementById("Red").innerHTML="Number 19  is :"+color(19);
+        document.getElementById("Green").innerHTML="Number 29  is :"+color(29);
+        document.getElementById("Color").innerHTML="Number 1p  is :"+color(100);
+      }
+    </script>
+  </body>
+</html>

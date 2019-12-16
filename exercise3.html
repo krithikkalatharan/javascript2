@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <p> Tamil 99 :<span id="t"></span> </p>
+    <p> Religion 74 :<span id="r"></span> </p>
+    <p> maths 46 :<span id="m"></span> </p>
+    <p> History 2 :<span id="h"></span> </p>
+    <script type="text/javascript">
+      function assignGrade(Marks) {
+
+        if (Marks>75) {
+          return "A";
+        }else if (Marks>65) {
+          return "B";
+        }else if (Marks>45) {
+          return "C";
+        }else {
+          return "F";
+        }
+      }
+      document.getElementById("t").innerHTML=assignGrade(99);
+      document.getElementById("r").innerHTML=assignGrade(74);
+      document.getElementById("m").innerHTML=assignGrade(46);
+      document.getElementById("h").innerHTML=assignGrade(2);
+    </script>
+  </body>
+</html>
